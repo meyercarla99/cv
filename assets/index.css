@@ -1,0 +1,332 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background: linear-gradient(180deg, #3C3A48 0%, #0F2869 100%);
+}
+
+body {
+    height: 100%;
+    width: 80%;
+    max-width: 98%;
+    margin: 0 auto;
+}
+
+@media (min-width: 400px) {
+  div.profile-descr {
+    width: calc(100% - 300px);
+  }
+}
+
+sub {
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.up-shift {
+    margin-top: -4px;
+}
+
+.left-column {
+    width: 40%;
+    /* padding: 10px; */
+}
+
+.right-column {
+    width: 60%;
+    /* padding: 10px; */
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+div.header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+span.header-text {
+    font-size: 20pt;
+}
+
+div.header-container {
+    height: 350px;
+    min-height: 350px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+div.body-container {
+    width: 100%;
+    height: auto;
+    background-color: #E5E5E5;
+    display: inline-block;
+    position: relative;
+}
+
+div.profile-img-cont {
+    float: left;    
+    width: 250px;
+    height: 350px;
+    position: relative;
+    display: inline-block;
+    background-image: url("/assets/img/carla_meyer.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.profile-descr {
+    padding: 15px;
+    line-break: pre;
+    text-align: justify;
+    float: left;
+}
+
+div.profile-name-cont {
+    padding: 5px;
+    position: absolute;
+    width: 270px;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    opacity: 0.7;
+    border-radius: 0 50px 50px 0;
+}
+
+.profile-name {
+    font-size: 18pt;
+    padding-left: 10px;
+}
+
+div.profile-sub {
+    font-size: 14pt;
+    padding-left: 10px;
+}
+
+div.links {
+    /* float: left; */
+    /* position: absolute; */
+    /* left: 200px; */
+    /* bottom: 15px; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.links > div {
+    /* width: 50%; */
+    width: auto;
+    margin: 0 2%;
+    float: left;
+}
+
+span.email-icon > a::after {
+    background: url("/assets/img/email.svg") no-repeat;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+span.phone-icon ::before {
+    background: url("/assets/img/phone.svg") no-repeat;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+span.location-icon ::before {
+    background: url("/assets/img/location.svg") no-repeat;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+span.linkedin-icon > a::after {
+    background: url("/assets/img/share.svg") no-repeat;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+#tab1 {
+    display: block;
+}
+
+#tab2 {
+    display: none;
+}
+
+#tab3 {
+    display: none;
+    padding: 2% 10% 2% 10%;
+}
+
+.tab-heading {
+    width: 31%;
+    margin: 0 1%;
+}
+
+.lower-body-container {
+    width: 100%;
+}
+
+.tab {
+    padding: 2% 10% 2% 10%;
+    overflow-y: scroll;
+    max-height: 490px;
+    min-height: 490px;
+}
+
+.static-info-column {
+    padding: 2% 5%;
+}
+
+.foo-button {
+    width: 100%;
+    text-transform: none;
+}
+
+
+/* ul.main-list {
+    list-style-image: url();
+    width: 100%;
+    height: 100%;
+} */
+
+ul.main-list > li {
+    list-style: none;
+    /* margin: 0 0 0 10px; */
+}
+
+ul.main-list > li > ul > li {
+    list-style: none;
+}
+
+ul.main-list > li > ul > li::before {
+    color: #0091BE;
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+ul.main-list > li > span {
+    /* margin: 0 0 0 10px; */
+    /* padding-left: 10px; */
+}
+
+ul.main-list > li::before {
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 20px;
+    background-image: url("/assets/img/bullet point.svg");
+    margin-right: 10px;
+}
+
+.no-bullet {
+    list-style: none;
+}
+
+/* ul.main-list > li {
+    font-size: 12pt;
+} */
+
+::-webkit-scrollbar {
+    background: #8d9192;
+}
+
+hr.center-ball {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    box-sizing: content-box;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: visible;
+    border-style: inset;
+    border-width: 1px;
+
+    border: 0;
+    height: 1px;
+    position: relative;
+    margin: 2px 0 25px 0;
+}
+
+hr.center-ball:before {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background: #0091BE;
+    display: inline-block;
+    border: 2px solid #0091BE;
+}
+
+/* TODO */
+/* hr.center-ball:after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background: #0091BE;
+    display: inline-block;
+    border: 2px solid #0091BE;
+} */
+
+/* Colors */
+
+.white-text {
+    color: white !important;
+}
+
+.accent {
+    background-color: #0091BE !important;
+}
+
+.selected-accent {
+    background-color: #0f6885 !important;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
